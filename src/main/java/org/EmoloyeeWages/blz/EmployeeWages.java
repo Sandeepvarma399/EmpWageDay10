@@ -9,18 +9,19 @@ public class EmployeeWages {
         int wagePerHour = 20;
         int fullTimeHours = 8;
         int partTimeHours = 4;
+        int workingDays = 20;
 
         int empCheck = (int) Math.floor(Math.random() * 10) % 3;
         switch (empCheck) {
             case 1:
                 System.out.println(" Employee Is Present");
                 System.out.println(" Employee is fulltime EMPLOYEE");
-                System.out.println("Daily EmployeeWage for fulltime employee Is " + wagePerHour * fullTimeHours);
+                System.out.println("Daily EmployeeWage for fulltime employee Is " + wagePerHour * fullTimeHours * workingDays);
                 break;
             case 2:
                 System.out.println(" Employee Is Present");
                 System.out.println(" Employee is Parttime EMPLOYEE");
-                System.out.println("Daily EmployeeWage for parttime employee Is " + wagePerHour * partTimeHours);
+                System.out.println("Daily EmployeeWage for parttime employee Is " + wagePerHour * partTimeHours * workingDays);
                 break;
             default:
                 System.out.println(" Employee Is Absent");
