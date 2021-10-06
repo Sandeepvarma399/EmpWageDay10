@@ -10,6 +10,10 @@ public class EmployeeWages {
 
     public static void main(String[] args) {
         System.out.println("Welcome To Employee Wage Computation");
+        EmployeeWage();
+
+    }
+    public static void EmployeeWage() {
         int empWage = 0;
         int totalEmpWage = 0 ;
         int empHrs = 0;
