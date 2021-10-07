@@ -10,10 +10,14 @@ public class EmployeeWages {
 
     public static void main(String[] args) {
         System.out.println("Welcome To Employee Wage Computation");
-        EmployeeWage();
-
+        System.out.println("the employewage for TCS is"  );
+        EmployeeWage("Cognizant", 15,18,100);
+        System.out.println("the employewage for INFOSYSis"  );
+        EmployeeWage("Accenture", 20,20,90);
+        System.out.println("the employewage for BRIDGELABZis"  );
+        EmployeeWage("Bridgelabz", 20,20,90);
     }
-    public static void EmployeeWage() {
+    public static void EmployeeWage(String company, int empRatePerHr, int maxWorkDays, int maxWorkHrs) {
         int empWage = 0;
         int totalEmpWage = 0 ;
         int empHrs = 0;
